@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/idUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="Iniciar Sesion"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimary"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:onClick="ingresar"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="¿Olvidaste tu contraseña?" />
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="Registrar" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Consultar" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Asignar" />
+        <item
+            android:id="@+id/nav_reporte"
+            android:title="Reporte" />
+
+        <item
+            android:id="@+id/nav_atender"
+            android:title="Atender " />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Perfil"  />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Configuracion"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+
+</menu>
